@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --bg-0: #020617;
+  --bg-1: #0f172a;
+  --bg-2: #1e293b;
+  --bg-3: #334155;
+  --txt-0: #f1f5f9;
+  --txt-1: #cbd5e1;
+  --txt-2: #94a3b8;
+  --accent-0: #22d3ee;
+  --accent-1: #06b6d4;
+  --accent-2: #0891b2;
+  --success: #10b981;
+  --warning: #d97706;
+  --danger: #dc2626;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg-0: #ffffff;
+  --bg-1: #f8fafc;
+  --bg-2: #f1f5f9;
+  --bg-3: #e2e8f0;
+  --txt-0: #0f172a;
+  --txt-1: #334155;
+  --txt-2: #64748b;
+  --accent-0: #0891b2;
+  --accent-1: #0e7490;
+  --accent-2: #155e75;
+  --success: #059669;
+  --warning: #d97706;
+  --danger: #dc2626;
+}
+
+body {
+  @apply text-slate-100;
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 2% -6%, rgba(8, 145, 178, 0.14) 0, transparent 34%),
+    radial-gradient(circle at 96% 3%, rgba(6, 182, 212, 0.12) 0, transparent 26%),
+    linear-gradient(165deg, #020617 0%, #020617 42%, #0b1224 100%);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 14px;
+}
+
+[data-theme="light"] body {
+  color: var(--txt-0);
+  background:
+    radial-gradient(circle at 2% -6%, rgba(8, 145, 178, 0.06) 0, transparent 34%),
+    radial-gradient(circle at 96% 3%, rgba(6, 182, 212, 0.05) 0, transparent 26%),
+    linear-gradient(165deg, #f8fafc 0%, #f8fafc 42%, #f0f4f8 100%);
+}
+
+/*
+ * Light-mode overrides for hardcoded Tailwind dark classes.
+ * This avoids touching 50+ component files while providing a coherent light theme.
+ * Targeting the most frequently used slate-based utility classes.
+ */
+
+/* ── Backgrounds ── */
+[data-theme="light"] .bg-slate-950 { background-color: #ffffff !important; }
+[data-theme="light"] .bg-slate-900 { background-color: #f8fafc !important; }
+[data-theme="light"] .bg-slate-900\/50 { background-color: rgba(248, 250, 252, 0.5) !important; }
+[data-theme="light"] .bg-slate-800 { background-color: #f1f5f9 !important; }
+[data-theme="light"] .bg-slate-800\/60 { background-color: rgba(241, 245, 249, 0.6) !important; }
+[data-theme="light"] .bg-slate-800\/70 { background-color: rgba(241, 245, 249, 0.7) !important; }
+
+/* ── Text ── */
+[data-theme="light"] .text-slate-100 { color: #0f172a !important; }
+[data-theme="light"] .text-slate-200 { color: #1e293b !important; }
+[data-theme="light"] .text-slate-300 { color: #334155 !important; }
+[data-theme="light"] .text-slate-400 { color: #64748b !important; }
+[data-theme="light"] .text-slate-500 { color: #64748b !important; }
+
+/* ── Borders ── */
+[data-theme="light"] .border-slate-700 { border-color: #e2e8f0 !important; }
+[data-theme="light"] .border-slate-800 { border-color: #e2e8f0 !important; }
+[data-theme="light"] .border-slate-800\/70 { border-color: rgba(226, 232, 240, 0.7) !important; }
+[data-theme="light"] .border-slate-600 { border-color: #cbd5e1 !important; }
+
+/* ── Hover states ── */
+[data-theme="light"] .hover\:bg-slate-800:hover { background-color: #e2e8f0 !important; }
+[data-theme="light"] .hover\:bg-slate-800\/60:hover { background-color: rgba(226, 232, 240, 0.6) !important; }
+[data-theme="light"] .hover\:bg-slate-800\/70:hover { background-color: rgba(226, 232, 240, 0.7) !important; }
+
+/* ── Accent overrides for light readability ── */
+[data-theme="light"] .text-cyan-300 { color: #0891b2 !important; }
+[data-theme="light"] .text-cyan-200 { color: #0e7490 !important; }
+[data-theme="light"] .text-cyan-400 { color: #0891b2 !important; }
+[data-theme="light"] .border-cyan-400\/30 { border-color: rgba(8, 145, 178, 0.3) !important; }
+[data-theme="light"] .border-cyan-500\/30 { border-color: rgba(6, 182, 212, 0.3) !important; }
+[data-theme="light"] .bg-cyan-900\/30 { background-color: rgba(8, 145, 178, 0.08) !important; }
+[data-theme="light"] .bg-cyan-500\/10 { background-color: rgba(6, 182, 212, 0.08) !important; }
+
+/* ── Status badge overrides ── */
+[data-theme="light"] .text-emerald-300 { color: #059669 !important; }
+[data-theme="light"] .text-emerald-400 { color: #059669 !important; }
+[data-theme="light"] .border-emerald-500\/30 { border-color: rgba(5, 150, 105, 0.3) !important; }
+[data-theme="light"] .bg-emerald-500\/10 { background-color: rgba(5, 150, 105, 0.08) !important; }
+[data-theme="light"] .text-red-400 { color: #dc2626 !important; }
+[data-theme="light"] .text-amber-400 { color: #d97706 !important; }
+
+/* ── Placeholder text ── */
+[data-theme="light"] .placeholder\:text-slate-500::placeholder { color: #94a3b8 !important; }
+
+/* ── Ring & focus ── */
+[data-theme="light"] .ring-slate-700 { --tw-ring-color: #e2e8f0 !important; }
+
+/* ── Shadow overrides ── */
+[data-theme="light"] .shadow-black\/40 { --tw-shadow-color: rgba(0, 0, 0, 0.08) !important; }
+[data-theme="light"] .shadow-black\/60 { --tw-shadow-color: rgba(0, 0, 0, 0.1) !important; }
+
+.mono {
+  font-family: "IBM Plex Mono", "SFMono-Regular", "Consolas", monospace;
+}
+
+/* Pointer cursor for all interactive/clickable elements */
+button,
+[role="button"],
+[role="switch"],
+[role="checkbox"],
+[role="tab"],
+[role="menuitem"],
+[role="option"],
+[role="link"],
+select,
+summary,
+a[href],
+label[for],
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+[data-slot="switch"],
+[data-slot="switch-thumb"] {
+  cursor: pointer;
+}
+
+/* Mobile-friendly tables: horizontal scroll wrapper */
+.table-responsive {
+  @apply w-full overflow-x-auto -mx-3 px-3;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* On small screens, make all table containers scrollable */
+@media (max-width: 640px) {
+  table {
+    min-width: 600px;
+  }
+
+  /* Compact padding on mobile for card content */
+  [data-slot="card-content"] {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  /* Stack form fields vertically on mobile */
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
