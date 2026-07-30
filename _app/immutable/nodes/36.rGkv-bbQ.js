@@ -1,0 +1,1 @@
+import{a as p,f as s}from"../chunks/C-jbSvLL.js";import{i as r}from"../chunks/DljImBck.js";import{p as e,o as i,e as m}from"../chunks/CXddNivV.js";import{g as n,b as f}from"../chunks/BFxT3L_E.js";var c=s('<p class="text-slate-400">Redirecting...</p>');function v(o,a){e(a,!1),i(()=>{n(f+"/diagnostics/ping",{replaceState:!0})}),r();var t=c();p(o,t),m()}export{v as component};

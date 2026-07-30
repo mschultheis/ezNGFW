@@ -1,0 +1,1 @@
+import{a as e,f as r}from"../chunks/C-jbSvLL.js";import{i as p}from"../chunks/DljImBck.js";import{p as s,o as i,e as m}from"../chunks/CXddNivV.js";import{g as f,b as n}from"../chunks/BFxT3L_E.js";var c=r('<p class="text-slate-400">Redirecting...</p>');function v(o,t){s(t,!1),i(()=>{f(n+"/certificates/store",{replaceState:!0})}),p();var a=c();e(o,a),m()}export{v as component};

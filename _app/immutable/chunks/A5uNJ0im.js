@@ -1,0 +1,1 @@
+import{A as f,l as u,B as _,C as o,m as t,D as g,F as l,y as i,x as d,z as m,G as p}from"./CXddNivV.js";function C(n,r){let s=null,y=t;var a;if(t){s=m;for(var e=p(document.head);e!==null&&(e.nodeType!==g||e.data!==n);)e=l(e);if(e===null)i(!1);else{var E=l(e);e.remove(),d(E)}}t||(a=document.head.appendChild(f()));try{u(()=>r(a),_|o)}finally{y&&(i(!0),d(s))}}export{C as h};

@@ -1,0 +1,1 @@
+import{a as p,f as s}from"../chunks/C-jbSvLL.js";import{i as e}from"../chunks/DljImBck.js";import{p as r,o as i,e as m}from"../chunks/CXddNivV.js";import{g as n,b as f}from"../chunks/BFxT3L_E.js";var l=s('<p class="text-slate-400">Redirecting...</p>');function v(o,a){r(a,!1),i(()=>{n(f+"/plugins/installed",{replaceState:!0})}),e();var t=l();p(o,t),m()}export{v as component};

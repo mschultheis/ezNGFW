@@ -1,0 +1,1 @@
+import{a as e,f as p}from"../chunks/C-jbSvLL.js";import{i as r}from"../chunks/DljImBck.js";import{p as s,o as i,e as m}from"../chunks/CXddNivV.js";import{g as n,b as f}from"../chunks/BFxT3L_E.js";var c=p('<p class="text-slate-400">Redirecting...</p>');function u(o,a){s(a,!1),i(()=>{n(f+"/ids/overview",{replaceState:!0})}),r();var t=c();e(o,t),m()}export{u as component};

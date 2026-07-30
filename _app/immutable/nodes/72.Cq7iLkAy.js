@@ -1,0 +1,1 @@
+import{a as e,f as p}from"../chunks/C-jbSvLL.js";import{i as s}from"../chunks/DljImBck.js";import{p as r,o as i,e as m}from"../chunks/CXddNivV.js";import{g as n,b as f}from"../chunks/BFxT3L_E.js";var c=p('<p class="text-slate-400">Redirecting to IPsec...</p>');function v(o,t){r(t,!1),i(()=>{n(f+"/ipsec/tunnels",{replaceState:!0})}),s();var a=c();e(o,a),m()}export{v as component};

@@ -1,0 +1,1 @@
+import{a as r,f as e}from"../chunks/C-jbSvLL.js";import{i as p}from"../chunks/DljImBck.js";import{p as s,o as i,e as m}from"../chunks/CXddNivV.js";import{g as f,b as n}from"../chunks/BFxT3L_E.js";var l=e('<p class="text-slate-400">Redirecting...</p>');function v(o,a){s(a,!1),i(()=>{f(n+"/firewall/rules",{replaceState:!0})}),p();var t=l();r(o,t),m()}export{v as component};

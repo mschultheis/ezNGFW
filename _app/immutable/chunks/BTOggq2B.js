@@ -1,0 +1,1 @@
+import{I as c}from"./CXddNivV.js";const{subscribe:n,update:d}=c([]);let u=0;const i={subscribe:n,add(s,e,t=5e3){const a=u++;d(r=>[...r,{id:a,type:s,message:e}]),setTimeout(()=>{d(r=>r.filter(o=>o.id!==a))},t)},success:s=>i.add("success",s),error:s=>i.add("error",s,8e3),warning:s=>i.add("warning",s),dismiss:s=>d(e=>e.filter(t=>t.id!==s))};export{i as t};

@@ -1,0 +1,1 @@
+import{a as p,f as r}from"../chunks/C-jbSvLL.js";import{i as s}from"../chunks/DljImBck.js";import{p as e,o as i,e as m}from"../chunks/CXddNivV.js";import{g as n,b as f}from"../chunks/BFxT3L_E.js";var c=r('<p class="text-slate-400">Redirecting...</p>');function v(o,t){e(t,!1),i(()=>{n(f+"/routing/static",{replaceState:!0})}),s();var a=c();p(o,a),m()}export{v as component};

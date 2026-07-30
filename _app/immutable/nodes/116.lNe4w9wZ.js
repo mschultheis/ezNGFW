@@ -1,0 +1,1 @@
+import{a,f as p}from"../chunks/C-jbSvLL.js";import{i as e}from"../chunks/DljImBck.js";import{p as r,o as i,e as m}from"../chunks/CXddNivV.js";import{g as n,b as f}from"../chunks/BFxT3L_E.js";var g=p('<p class="text-slate-400">Redirecting to syslog...</p>');function v(o,t){r(t,!1),i(()=>{n(f+"/syslog/settings",{replaceState:!0})}),e();var s=g();a(o,s),m()}export{v as component};
